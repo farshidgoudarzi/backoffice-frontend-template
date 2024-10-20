@@ -1,12 +1,13 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import { Button } from "./components/ui/button";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-800">
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <div className="flex space-x-4 mb-8">
         <a
           href="https://vitejs.dev"
@@ -28,19 +29,21 @@ function App() {
         </a>
       </div>
       <h1 className="text-4xl font-bold mb-8">Vite + React</h1>
-      <div className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center">
-        <button
+      <div className="p-8 rounded-lg shadow-md flex flex-col items-center bg-muted">
+        <Button
           onClick={() => setCount((count) => count + 1)}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-4 transition-colors"
+          variant="default"
+          size="lg"
+          className="mb-4"
         >
           count is {count}
-        </button>
+        </Button>
         <p className="text-center">
-          Edit <code className="bg-gray-200 p-1 rounded">src/App.tsx</code> and
-          save to test HMR
+          Edit <code className="p-1 rounded">src/App.tsx</code> and save to test
+          HMR
         </p>
       </div>
-      <p className="mt-8 text-sm text-gray-500">
+      <p className="mt-8 text-sm">
         Click on the Vite and React logos to learn more
       </p>
     </div>
