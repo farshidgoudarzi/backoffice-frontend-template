@@ -2,13 +2,14 @@
 
 ## Project Description
 
-A template for a backoffice frontend application using Preact, Vite, and TypeScript.
+A template for a backoffice frontend application using Preact, Vite, TypeScript, and Tailwind CSS.
 
 ## Technologies Used
 
 - **Preact**: A lightweight alternative to React.
 - **Vite**: A fast build tool for modern web projects.
 - **TypeScript**: A strongly typed language for JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
 ## Prerequisites
 
